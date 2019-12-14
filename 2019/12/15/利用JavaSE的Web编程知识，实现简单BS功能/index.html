@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="利用JavaSE的Web编程知识，实现简单B&#x2F;S功能关键字：Socket,SeverSocket,Http,html">
 <meta property="article:published_time" content="2019-12-14T16:43:50.362Z">
-<meta property="article:modified_time" content="2019-12-14T16:43:50.362Z">
+<meta property="article:modified_time" content="2019-12-14T16:47:47.907Z">
 <meta property="article:author" content="Shifty Yang">
 <meta name="twitter:card" content="summary">
   
@@ -177,12 +177,9 @@
 
 <hr>
 <h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><ol>
-<li>Browser向Server发送请求</li>
-</ol>
-<ul>
-<li>Browser发送带ip地址（也可以是域名）和请求信息路径的网址。</li>
-</ul>
-<ol start="2">
+<li><p>Browser向Server发送请求</p>
+<p>​    Browser发送带ip地址（也可以是域名）和请求信息路径的网址。</p>
+</li>
 <li><p>Server解析Browser的请求信息</p>
 <ul>
 <li>Server建立与Browser的链接，接受到数据</li>
@@ -197,12 +194,8 @@
 </ul>
 </li>
 <li><p>Browser接收数据进行解析</p>
+<p>​    Browser接收到所需的数据，利用内部的程序对数据进行页面渲染</p>
 </li>
-</ol>
-<ul>
-<li>Browser接收到所需的数据，利用内部的程序对数据进行页面渲染</li>
-</ul>
-<ol start="5">
 <li><p>注意事项及优化：</p>
 <ul>
 <li>Browser在请求数据时，可能不是一次性的，所以Server响应发送数据采用While循环</li>
