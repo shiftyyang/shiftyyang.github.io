@@ -8,12 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Java线程内存模型JMM java线程内存模型基于cpu缓存模型来建立的。   java线程在共享数据时，是从主内存中复制一份副本数据到线程所在的内存(速度更快)中运行。所以当一个线程改变这个数据时，另一个线程可能感知不到。 解决方法：private static volatile boolean initFlag &#x3D; false; 运行状态中，动态获取信息以及动态调用对象方法的功能称为Java">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;prepared_article&#x2F;%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86%E7%90%86%E8%A7%A3.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;prepared_article&#x2F;Java%E7%BA%BF%E7%A8%8B%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="article:published_time" content="2019-12-21T10:31:31.312Z">
-<meta property="article:modified_time" content="2019-12-18T09:16:02.081Z">
+<meta property="og:description" content="Java线程内存模型JMM java线程内存模型基于cpu缓存模型来建立的。   java线程在共享数据时，是从主内存中复制一份副本数据到线程所在的内存(速度更快)中运行。所以当一个线程改变这个数据时，另一个线程可能感知不到。 解决方法：private static volatile boolean initFlag &#x3D; false; 运行状态中，动态获取信息以及动态调用对象方法的功能称为Java">
+<meta property="article:published_time" content="2019-12-25T00:22:11.993Z">
+<meta property="article:modified_time" content="2019-12-24T15:36:50.048Z">
 <meta property="article:author" content="Shifty Yang">
 <meta name="twitter:card" content="summary">
   
@@ -156,7 +158,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="Java线程内存模型"><a href="#Java线程内存模型" class="headerlink" title="Java线程内存模型"></a>Java线程内存模型</h2><h3 id="JMM"><a href="#JMM" class="headerlink" title="JMM"></a>JMM</h3><ul>
+<li>java线程内存模型基于cpu缓存模型来建立的。</li>
+</ul>
+<ul>
+<li><p>java线程在共享数据时，是从主内存中复制一份副本数据到线程所在的内存(速度更快)中运行。所以当一个线程改变这个数据时，另一个线程可能感知不到。</p>
+<p>解决方法：private static <strong>volatile</strong> boolean initFlag = false;</p>
+<p>运行状态中，动态获取信息以及动态调用对象方法的功能称为Java语言的反射机制。（出自百度百科）</p>
+<p>运行时的类信息。（出自java编程思想）</p>
+</li>
+</ul>
+
       
 
       
@@ -214,7 +226,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/prepared_article/%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86%E7%90%86%E8%A7%A3.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/prepared_article/Java%E7%BA%BF%E7%A8%8B%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -247,7 +259,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java线程内存模型"><span class="toc-number">1.</span> <span class="toc-text">Java线程内存模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JMM"><span class="toc-number">1.1.</span> <span class="toc-text">JMM</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
